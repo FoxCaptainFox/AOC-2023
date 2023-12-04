@@ -7,7 +7,7 @@ data = read_data(2)
 possible_combination_ids_sum, power_sum = 0, 0
 
 for line in data:
-    combination_id_str, description = line.split(': ', 1)
+    combination_id_str, description = line.split(': ')
     combination_id = int(combination_id_str.split(' ')[-1])
 
     minimal_element_number = {}

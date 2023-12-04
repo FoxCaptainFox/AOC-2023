@@ -37,7 +37,7 @@ def read_data(file_number: int, as_separate_characters: Literal[False] = False, 
 @overload
 def read_data(file_number: int, as_separate_characters: Literal[True], output_type: Callable[[str], T] = str, filter_none: bool = False) -> List[List[T]]: ...
 
-def read_data(file_number: int, as_separate_characters: bool = False, output_type: Callable[[str], T] = str,filter_none: bool = False) -> Union[List[T], List[List[T]]]:
+def read_data(file_number: int, as_separate_characters: bool = False, output_type: Callable[[str], T] = str, filter_none: bool = False) -> Union[List[T], List[List[T]]]:
     """
     Reads data from a file and converts each line or character to the specified output type.
     Filters out None values if filter_none is True.
